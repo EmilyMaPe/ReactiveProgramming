@@ -1,0 +1,26 @@
+Ahora aprenderemos otro metodo que es muy usual para poder
+hacer procesos de depuración o hacer algun mecanismo mientras
+van llegando los datos.
+Para este ejemplo vamos a tomar cada valor que viene del flujo
+para hacer una operacion en particular, para este ejemplo volveremos 
+a utilizar un log.
+
+Mono.just(new Persona(1, "Emily", 22)).doOnNext(p -> Log.info("[Reactor] Persona: " + p));
+Observable.just(new Persona(1, "Emily", 22)).doOnNext(p -> Log.info("[Reactor] Persona: " + p));
+
+Si corremos nuestra app notaremos que a diferencia del metodo subscribe, no
+tenemos ningun resultado en consola. Esto por que nos falta 
+el metodo subscribe, asi que si lo incluimos notaremos que 
+se imprime dos veces cada log, uno del doOnNext, y otro del subscribe.
+
+doOnNext --> Depuración
+subscribe --> Recolección del dato final
+
+Si en el metodo doOnNext queremos hacer mas de una operacion
+podemos utilizar llaves {} de este manera podremos escribir 
+mas de una linea. 
+
+Mono.just(new Persona(1, "Emily", 22)).doOnNext(p -> {
+			// Logica adicional
+			Log.info("[Reactor] Persona: " + p);
+		}).subscribe(p -> Log.info("[Reactor] Persona: " + p));

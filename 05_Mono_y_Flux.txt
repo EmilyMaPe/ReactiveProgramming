@@ -1,0 +1,35 @@
+Ahora dejaremos de lado RxJava2 y nos centraremos unicamente
+en Reactor.
+Para esto crearemos un metodo que se llame mono()
+Mono representa un flujo de datos de tipo asincrono 
+
+Y un metodo flux
+Flux representa igual flujos de datos asincronos, pero
+de mas de un elemento.
+
+	public void mono() {
+		Mono.just(new Persona(1, "Emily", 22)).subscribe(p -> Log.info(p.toString()));
+	}
+
+	public void flux() {
+		List<Persona> personas = new ArrayList<>();
+		personas.add(new Persona(1, "Emily", 22));
+		personas.add(new Persona(2, "Montserrat", 23));
+		personas.add(new Persona(3, "Madrigal", 24));
+		
+		Flux.fromIterable(personas).subscribe(p -> Log.info(p.toString()));
+	}
+
+Y colocamos estos metodos en nuestro run
+
+public void run(String... args) throws Exception {
+		mono();
+		flux();
+	}
+
+Que pasa si queremos pasar de flux a mono, donde el unico elemento de mono
+sea la lista de personas, el metodo collectList() nos regresara un mono generico
+
+		Flux<Persona> fx = Flux.fromIterable(personas);
+		//De flux a mono
+		fx.collectList().subscribe(lista -> Log.info(lista.toString()));

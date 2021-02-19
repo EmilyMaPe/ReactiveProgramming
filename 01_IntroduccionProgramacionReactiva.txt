@@ -1,0 +1,44 @@
+Programacion reactiva
+Tenemos un sujeto en estudio, cuando algo le pasa se lanza un evento, y 
+otros sujetos reaccionan y ejecutan alguna accion de manera independiente.
+
+Vamos a tener flujos de datos que se disparan tras alguna acción. 
+
+Inmutabilidad: los flujos no cambian, se crea uno nuevo a traves del flujo principal.
+
+Beneficios
+El codigo sera mas legible
+pensado en operadores
+evita callbacks
+procesos asincronos
+escalabilidad
+consumo optimo de recurso
+
+ProjectReactor:
+Programación reactiva bajo la firma de spring
+
+
+Spring MVC:
+Imperative logic, simple to write and debug
+JDBC, JPA, locking deps
+--> Basado en servlets
+
+Spring Web Flux:
+Functional endpoints
+Event loop concurrency model
+netty
+--> Basado en Reactive http
+
+Both:
+@Controller
+Reactive clients
+Tomcat, Jetty, Undertow
+
+En project reactor hay dos clases principales:
+--> Mono
+Un flujo de datos de un solo elemento
+--> Flux
+Un flujo de datos de varios elementos dentros
+
+
+

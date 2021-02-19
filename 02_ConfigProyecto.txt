@@ -1,0 +1,16 @@
+Creando el proyecto
+--> new sprint starter project
+--> change project name
+--> no agregar dependencias para trabajar a nivel de consola la reactividad
+--> vamos al archivo pom y agregamos la sig dependencias 
+* Project reactor
+* RxJava2
+
+<dependency>
+	<groupId>io.projectreactor</groupId>
+	<artifactId>reactor-core</artifactId>
+</dependency>
+<dependency>
+	<groupId>io.reactivex.rxjava2</groupId>
+	<artifactId>rxjava</artifactId>
+</dependency>

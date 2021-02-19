@@ -1,0 +1,44 @@
+En el la clase main del proyecto crearemos un log para revisar en forma
+de debug los que estaremos realizando
+
+importamos el log de org.slf4j
+
+esta clase principal debe implementar la interfaz "CommandLineRunner"
+
+esto para poder sobreescribir el metodo run, donde indicaremos la logica que vamos a ejecutar
+
+--> crear metodos
+ public void reactor(){
+	// Vamos a crear un 1er flujo(de un solo elemento)
+	Mono.just(
+}
+
+public void rxjava2(){
+	
+}
+
+Vamos a crear un 1er flujo(de un solo elemento)
+public void reactor(){
+	// Flujo de un solo elemento
+	Mono.just(new Persona());
+}
+public void rxjava2(){
+	// Flujo de un solo elemento
+	Observable.just(new Persona());
+}
+
+//Para esto crearemos la clase persona
+
+Una vex hecho esto llamamos a los metodos en el metodo run
+
+Si corremos el programa como Springboot, notaremos que no pasa nada,
+esto por que uno de los principios de la programación reactiva es que, 
+uno tiene un sujeto en estudio, en este caso es nuestro flujo de datos, 
+y nosotros para enterarnos de ese flujo de datos necesitamos suscribirnos.
+
+Para poder suscribirnos debemos utilizar un metodo llamado suscribe() y dentro
+de sus parametros podemos indicar la logica mas adecuada. 
+Para este ejemplo meteremos un log. 
+
+Mono.just(new Persona(1, "Emily", 22)).subscribe(p -> Log.info("[Reactor] Persona: " + p));
+Observable.just(new Persona(1, "Emily", 22)).subscribe(p -> Log.info("[RxJava2] Persona: " + p));
