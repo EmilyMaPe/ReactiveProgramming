@@ -1,3 +1,22 @@
 Par poder tener un orden crearemos un nuevo paquete
 "operador.creacion"
 y dentro una clase "Creacion"
+
+Colocamos un logger para hacer algunas impresiones
+
+Crearemos un metodo llamado justFrom 
+	--> Los metodos just y fromIterable
+
+Crearemos otro metodo empty
+	--> Nos servira cuando tengamos flujos de datos vacios
+
+Metodo range
+	--> Crear flujo de datos a partir de un rango
+
+Metodo repeat
+	--> repetir un flujo de datos
+	--> Ejecuta el original + el numero de repeat
+		ex: repeat = 3, se ejecuta 4 veces
+
+Podemos probar estos metodos en nuestro metodo run
+

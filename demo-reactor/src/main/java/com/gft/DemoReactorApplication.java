@@ -10,6 +10,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.gft.model.Persona;
+import com.gft.operador.creacion.Creacion;
 
 import io.reactivex.Observable;
 import reactor.core.publisher.Flux;
@@ -70,7 +71,10 @@ public class DemoReactorApplication implements CommandLineRunner {
 		// rxjava2();
 		// mono();
 		// flux();
-		fluxMono();
+		// fluxMono();
+		Creacion app = new Creacion();
+		// app.range();
+		app.repeat();
 	}
 
 }
