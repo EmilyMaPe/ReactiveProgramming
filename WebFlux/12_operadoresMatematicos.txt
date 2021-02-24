@@ -1,0 +1,10 @@
+Creamos un nuevo paquete operador.condicional
+con una clase Condicional y un Log
+
+metodos:
+
+--> average : promedio
+--> count : valores en el flujo
+--> min : valor minimo en un flujo
+--> sum : suma todos los valores de un flujo
+--> summarizing : devuelve count, sum, min, average y max

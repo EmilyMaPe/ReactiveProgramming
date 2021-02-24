@@ -1,0 +1,16 @@
+Servicio rest con enfoque reactivo
+
+new project --> sprint starter project :
+
+select dependency :
+	- spring reactive web
+Creamos un paquete model con su respectivo modelo
+
+Creamos un paquete controller 
+--> clase PersonaController donde estara llamando a los metodos 
+	de BD, y accederemos a ellos a travez de los mappings 
+	que definamos
+
+Ejemplo sin conexion a BD por lo que se crea un paquete repo
+
+Creamos una nueva interfaz y su clase que lo implementa

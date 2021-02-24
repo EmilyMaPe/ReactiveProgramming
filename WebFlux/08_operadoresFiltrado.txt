@@ -1,0 +1,18 @@
+Creamos un nuevo paquete operador.filtrado
+con una clase Filtrado y un Log
+
+Metodos:
+
+--> filter : flitrar un flux por un criterio
+
+--> distinct : nos regresara los elementos unicos de un Flux.
+Para objetos necesitamos ir a la clase del modelo y sobreescribir 
+el metodo HashCode, y este criterio puede ser por uno o todos los atributos
+
+--> take : toma los n primeros elementos de un flujo
+
+--> takeLast : toma los ultimos n elementos de un flujo
+
+--> skip : omite los primeros n elementos de un flujo
+
+--> skipLast : omite los ultimos n elementos de un flujo

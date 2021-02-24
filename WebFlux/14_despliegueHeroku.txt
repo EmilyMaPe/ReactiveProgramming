@@ -1,0 +1,18 @@
+Crear cuenta en heroku
+
+instalar herokucli
+
+ir al proyecto
+	nuevo archivo a nivel raiz : system.properties
+
+		java.runtime.version = 8
+show in local terminal:
+	heroku login
+	git init
+	git add . 
+	git commit -m "Primer Commit"
+	heroku apps:create emily-webflux
+	git push heroku master
+	heroku open
+	
+Agi ya podemos usar los mappings que hemos asignado : /personas

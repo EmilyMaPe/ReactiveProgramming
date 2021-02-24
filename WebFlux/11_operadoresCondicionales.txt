@@ -1,0 +1,11 @@
+Creamos un nuevo paquete operador.condicional
+con una clase Condicional y un Log
+
+metodos:
+
+--> defaultEmpty : valor que tomara si el flujo esta vacio
+
+--> takeUntil : toma valores del flujo hasta uno despues de 
+		cumplir una condicion
+
+--> timeout : definir un tiempo limite de ejecucion de un flujo.

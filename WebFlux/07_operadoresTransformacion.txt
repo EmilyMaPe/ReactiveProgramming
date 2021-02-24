@@ -1,0 +1,13 @@
+Creamos nuevo paquete operador.transformacion
+
+creamos clase transformacion y creamo un Logger
+
+Metodos:
+ --> map : transformar los elementos del flujo, para
+cada elemento p realizamos una operacion.
+
+--> flatMap : transformas el flujo, pero como retorno pide un flujo.
+
+--> groupBy : va a agrupar por la caracteristica dada en diferentes flux 
+la forma en que trabaja group by se podria refactorizar
+a metodos de referencia de Java8

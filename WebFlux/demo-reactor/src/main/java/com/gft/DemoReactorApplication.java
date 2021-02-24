@@ -10,7 +10,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.gft.model.Persona;
-import com.gft.operador.creacion.Creacion;
+import com.gft.operador.matematico.Matematico;
 
 import io.reactivex.Observable;
 import reactor.core.publisher.Flux;
@@ -72,9 +72,47 @@ public class DemoReactorApplication implements CommandLineRunner {
 		// mono();
 		// flux();
 		// fluxMono();
-		Creacion app = new Creacion();
+
+		// Creacion app = new Creacion();
 		// app.range();
-		app.repeat();
+		// app.repeat();
+
+//		Transformacion app = new Transformacion();
+		// app.map();
+		// app.flatMap();
+//		app.groupBy();
+
+//		Filtrado app = new Filtrado();
+		// app.filter();
+		// app.distinct();
+//		app.take();
+//		app.takeLast();
+//		app.skip();
+//		app.skipLast();
+
+//		Combinacion app = new Combinacion();
+//		app.merge();
+//		app.zip();
+//		app.zipWith();
+
+//		ErrorOP app = new ErrorOP();
+//		app.retry();
+//		app.errorReturn();
+//		app.errorResume();
+//		app.errorMap();
+
+//		Condicional app = new Condicional();
+//		app.defaultEmpty();
+//		app.takeUntil();
+//		app.timeout(); //no funciona con el thread.sleep
+
+		Matematico app = new Matematico();
+//		app.average();
+//		app.count();
+//		app.min();
+//		app.sum();
+		app.summarizing();
+
 	}
 
 }

@@ -1,0 +1,10 @@
+Creamos un nuevo paquete operador.combinacion
+con una clase Combinacion y un Log
+
+Metodos:
+
+--> merge : combinar varios flujos de datos
+
+--> zip : comprime flujos con una funcion de combinación
+
+--> zipWith : un flujo lo comprime con otro, se requiere un flujo

@@ -1,0 +1,13 @@
+Creamos un nuevo paquete operador.error
+con una clase ErrorOP y un Log
+
+metodos:
+
+retry : cuantas veces intenta de nuevo el flujo antes de mandar el error
+
+return : regresa el error sin traza
+
+resume : continua con el flujo con otra accion
+
+map : lanzamos la traza por la funcion del onErrorMap
+
